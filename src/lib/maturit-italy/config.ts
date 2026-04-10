@@ -1,0 +1,45 @@
+// Maturità Italy Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM115",
+  slug: "maturit-italy",
+  name: "Maturità Italy",
+  fullName: "Esame di Stato",
+  alias: "Esame di Stato",
+  family: "Maturita Italy",
+  category: "School exams",
+  subcategory: "Secondary leaving",
+  country: "Italy",
+  region: "EMEA",
+  languages: ["Italian"],
+  estimatedAnnualTakers: "high",
+  testingWindow: "Jun-Jul",
+  schedulePattern: "Annual",
+  ageGroup: "18-20",
+  targetUser: "School student",
+  delivery: "Paper-based + oral",
+  questionTypes: ["Essay","structured response","oral"],
+  adaptivity: "Linear",
+  sections: "National + school-specific",
+  scoringMode: "100-point scale",
+  essayOrSpeaking: "Yes",
+  ipRisk: "Low",
+  contentReuse: "school_subjects",
+  uiEngine: "paper_oral_mixed",
+  monetizationPotential: "Medium",
+  tier: "Tier 5",
+  launchWave: "Wave 7",
+  themeColor: "#D97706",
+  themeColorDark: "#B45309",
+  localizationComplexity: "Medium",
+  offlineNeeded: false,
+  mobileFirst: false,
+  locale: "it",
+  isRTL: false,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;
